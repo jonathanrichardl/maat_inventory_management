@@ -26,6 +26,9 @@ NumberOfRetries() # PascalCase is not valid
 connect-into-drive() # kebab-case is a sin
 ```
 ## 2. Use UPPERCASE letters for constants 
+```
+CONST = 4
+```
 ## 3. Comments, functions , variables, etc are written in english.
 ### Dos 
 ```
@@ -51,7 +54,6 @@ def conectar_para_dirigir():
 def connect_into_drive(max_retries : int) -> None:
     return None
     
-#np array is mutable no need to return
 def increment_all_elements(array : np.array) -> None: 
     for count, num in np.ndenumerate(array):
         array[count] = num + 1
@@ -59,7 +61,7 @@ def increment_all_elements(array : np.array) -> None:
 ```
 ### Don'ts 
 ```
-def connect_into_drive():
+def connect_into_drive(max_retries):
     return None
     
 def increment_all_elements(array): 
