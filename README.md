@@ -12,8 +12,46 @@ Contents: Machine Learning
 
 # Writing Rules
 Refer into PEP8(https://www.python.org/dev/peps/pep-0008/) Python writing guide, some simple rules that must be implemented:
-1. Use lowercase letters for function and variables, delimited with underscore (snake_case), for example: connect_to_drive(), add_columns(). Do Not use camelCase() or kebab-case() or PascalCase(). 
-2. Use UPPERCASE letters for constants  
-3. Comments and functions are written in english.
-
+## 1. Use lowercase letters for function and variables, delimited with underscore (snake_case).
+### Dos
+```
+some_ordinary_function() 
+number_of_retries = 10 
+connect_into_drive()
+```
+### Don'ts
+```
+someOrdinaryFunction() # camelCase is not valid
+NumberOfRetries() # PascalCase is not valid
+connect-into-drive() # kebab-case is a sin
+```
+## 2. Use UPPERCASE letters for constants 
+## 3. Comments and functions are written in english.
+### Dos 
+```
+"""
+This function is used for connecting into drive with the provided credentials
+"""
+def connect_into_drive():
+    return None
+```
+### Don'ts 
+```
+"""
+此功能用于使用提供的凭据连接到驱动器
+"""
+def connect_into_drive():
+    return None
+```
+5. Use type annotations for functions
+### Dos 
+```
+def connect_into_drive(max_retries : int) -> None:
+    return None
+```
+### Don'ts 
+```
+def connect_into_drive():
+    return None
+```
 All of those rules are enforced so we can put this project into our portofolio.
