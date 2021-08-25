@@ -26,13 +26,14 @@ NumberOfRetries() # PascalCase is not valid
 connect-into-drive() # kebab-case is a sin
 ```
 ## 2. Use UPPERCASE letters for constants 
-## 3. Comments and functions are written in english.
+## 3. Comments, functions , variables, etc are written in english.
 ### Dos 
 ```
 """
 This function is used for connecting into drive with the provided credentials
 """
 def connect_into_drive():
+    retries = 3
     return None
 ```
 ### Don'ts 
@@ -40,7 +41,8 @@ def connect_into_drive():
 """
 此功能用于使用提供的凭据连接到驱动器
 """
-def connect_into_drive():
+def conectar_para_dirigir():
+    perulangan = 3
     return None
 ```
 ## 4. Use type annotations for functions
