@@ -43,15 +43,25 @@ def connect_into_drive():
 def connect_into_drive():
     return None
 ```
-5. Use type annotations for functions
+## 4. Use type annotations for functions
 ### Dos 
 ```
 def connect_into_drive(max_retries : int) -> None:
     return None
+    
+#np array is mutable no need to return
+def increment_all_elements(array : np.array) -> None: 
+    for count, num in np.ndenumerate(array):
+        array[count] = num + 1
+    
 ```
 ### Don'ts 
 ```
 def connect_into_drive():
     return None
+    
+def increment_all_elements(array): 
+    for count, num in np.ndenumerate(array):
+        array[count] = num + 1
 ```
 All of those rules are enforced so we can put this project into our portofolio.
